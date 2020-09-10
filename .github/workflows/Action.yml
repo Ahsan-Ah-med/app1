@@ -40,4 +40,4 @@ jobs:
        
        #deploy surge
       - name: surge
-        run: surge ./build http://app-first.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge http://app-first.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
