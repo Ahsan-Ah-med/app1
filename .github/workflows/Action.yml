@@ -34,9 +34,12 @@ jobs:
         with:
         # Yarn command
            cmd: install
+       
+       - name: yarn build
+         run: yarn build 
         
       - name: Install surge
         run: npm install -g surge
        
-      - name: surge
+      - name: Deployment tool surge
         run: surge ./build http://app-first.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
