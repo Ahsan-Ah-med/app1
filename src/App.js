@@ -1,27 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Medicine from './Medicine.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <h1>Hello All of You</h1>
-          <h2>What are you doing???</h2>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <Medicine></Medicine> */}
+      <Medicine medicineName='Cebosh 400mg' sweetDish='Kheer' />
+      <hr />
+      <Medicine medicineName='Klariced 250mg' sweetDish='Jaleebi' />
+      <hr />
+      <Medicine medicineName='Leflox 250mg' sweetDish='Gajar ka Halwa' />
     </div>
   );
 }
-
 export default App;
